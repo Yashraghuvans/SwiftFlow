@@ -1,9 +1,5 @@
-//
-//  ContentView.swift
-//  demo
-//
 //  Created by Yash Raghuvanshi on 22/03/25.
-//
+
 
 import SwiftUI
 
@@ -68,11 +64,11 @@ struct BoxView: View {
 
     var body: some View {
         Text(text)
-            .frame(width: 80, height: 80)
+            .frame(width: 100, height: 100)
             .background(backgroundColor)
             .foregroundColor(.black)
             .cornerRadius(8)
-            .border(Color.gray, width: 1)
+            .border(Color.gray, width: 2)
     }
 }
 
