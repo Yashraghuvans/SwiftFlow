@@ -62,7 +62,19 @@ struct ContentView: View {
     }
 }
 
+struct BoxView: View {
+    let text: String
+    let backgroundColor: Color
 
+    var body: some View {
+        Text(text)
+            .frame(width: 80, height: 80)
+            .background(backgroundColor)
+            .foregroundColor(.black)
+            .cornerRadius(8)
+            .border(Color.gray, width: 1)
+    }
+}
 
 #Preview {
     ContentView()
