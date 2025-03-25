@@ -43,10 +43,10 @@ struct ContentView: View {
             .cornerRadius(5)
 
             VStack {
-                ForEach(0..<3) { row in
+                ForEach(0..<2) { row in
                     HStack {
-                        ForEach(0..<3) { col in
-                            let index = row * 3 + col
+                        ForEach(0..<2) { col in
+                            let index = row * 2 + col
                             BoxView(text: "\(index + 1)", backgroundColor: getColor(for: index))
                         }
                     }
@@ -57,7 +57,7 @@ struct ContentView: View {
     }
 
     func getColor(for index: Int) -> Color {
-        let colors: [Color] = [.red, .green, .blue, .yellow, .orange, .purple, .pink, .cyan, .mint]
+        let colors: [Color] = [.red, .green, .blue, .yellow]
         return colors[index]
     }
 }
